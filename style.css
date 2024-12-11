@@ -198,7 +198,7 @@ div.footer {
     color: white;
     font-weight: bolder;
     font-family: sans-serif;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
 
     a {
