@@ -38,9 +38,9 @@ div.hero {
     background-size: 80px 80px;
     background-color: rgb(35, 35, 35);
     background-image:
-    linear-gradient(to right, rgb(44, 44, 44) 1px, transparent 1px),
-    linear-gradient(to bottom, rgb(44, 44, 44) 1px, transparent 1px);
-    
+        linear-gradient(to right, rgb(44, 44, 44) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(44, 44, 44) 1px, transparent 1px);
+
     padding: 20px;
     height: 100vh;
     display: grid;
@@ -68,26 +68,26 @@ div.hero {
         font-family: sans-serif;
         justify-content: flex-start;
         margin-top: 100px;
-    
+
         p.name {
             margin-bottom: 30px;
             font-size: 18px;
         }
-    
-        h1.slogan  {
+
+        h1.slogan {
             font-size: 60px;
             margin-bottom: 30px;
         }
-    
+
         span.typed-text {
             font-size: 50px;
             color: rgba(148, 70, 226, 0.715);
             margin-bottom: 30px;
         }
-    
+
         a {
             font-size: 40px;
-        }   
+        }
     }
 }
 
@@ -102,13 +102,13 @@ div.projects {
     grid-template-rows: 2fr 0.5fr 3fr 3fr 3fr 2fr;
     color: white;
     font-family: sans-serif;
-    grid-template-areas: 
-    "t ."
-    "h i"
-    "d ."
-    ". ."
-    ". ."
-    ". .";
+    grid-template-areas:
+        "t ."
+        "h i"
+        "d ."
+        ". ."
+        ". ."
+        ". .";
 
     h2 {
         grid-area: t;
@@ -120,7 +120,7 @@ div.projects {
 
     h3.header {
         grid-area: h;
-        text-align:left;
+        text-align: left;
         font-size: 50px;
         margin-left: 175px;
         margin-right: auto;
@@ -130,7 +130,7 @@ div.projects {
         margin-left: 175px;
         margin-right: auto;
         margin-top: 70px;
-        
+
         h3.name {
             font-size: 25px;
             margin-bottom: 5px;
@@ -145,7 +145,8 @@ div.projects {
         h4 {
             font-weight: normal;
             margin-bottom: 20px;
-            span  {
+
+            span {
                 color: rgba(148, 70, 226, 0.715);
             }
         }
@@ -186,11 +187,65 @@ div.projects {
         top: 150px;
         align-self: start;
     }
-    
+
 }
 
 div.footer {
     background: rgba(0, 0, 0, 0.897);
     height: 200vh;
     color: white;
+}
+
+.feedback-container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.93);
+    color: white;
+    font-family: sans-serif;
+    max-width: 600px;
+    margin: 50px auto;
+    border-radius: 10px;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2em;
+}
+
+.feedback-container label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+}
+
+.feedback-container input,
+.feedback-container textarea,
+.feedback-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: rgb(44, 44, 44);
+    color: white;
+}
+
+.feedback-container button {
+    background-color: rgba(148, 70, 226, 0.715);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-container button:hover {
+    background-color: rgba(148, 70, 226, 0.815);
+}
+
+#message {
+    display: none;
+    margin: 20px;
+    font-weight: bold;
+    padding: 8px;
+    border-radius: 4px;
+    border-color: aquamarine;
 }
