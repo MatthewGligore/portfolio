@@ -2,6 +2,36 @@
     margin: 0;
 }
 
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+
+    ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+
+        li {
+            display: inline;
+
+            a {
+                display: block;
+                color: white;
+                text-align: center;
+                padding: 14px 20px;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+
 div.hero {
     /* background: repeating-linear-gradient(-45deg, #000, #333 10px, #000 30px); */
 
@@ -164,4 +194,61 @@ div.footer {
     height: 200vh;
     color: white;
 }
+
+
+
+
+
+
+
+/* Feedback Page */
+
+
+
+
+.feedback-container {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.93);
+    color: white;
+    font-family: sans-serif;
+    max-width: 100%;
+    margin: auto;
+    height: 100vh;
+}
+
+.feedback-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.feedback-container label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.feedback-container input,
+.feedback-container textarea,
+.feedback-container button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.feedback-container button {
+    background-color: rgba(148, 70, 226, 0.715);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.feedback-container button:hover {
+    background-color: rgba(148, 70, 226, 0.815);
+}
+
+#feedback-entries { margin-top: 20px; } .feedback-entry { background: #444; padding: 10px; margin-bottom: 10px; border-radius: 5px; } .feedback-entry h3 { margin: 0; margin-bottom: 5px; } .feedback-entry p { margin: 0; margin-bottom: 5px; } .feedback-entry img { max-width: 100%; border-radius: 5px; }
+
+
+
 
