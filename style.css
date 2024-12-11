@@ -250,3 +250,11 @@ div.footer {
     border-radius: 4px;
     border-color: aquamarine;
 }
+
+.feedback-bg {
+    background-size: 80px 80px;
+    background-color: rgb(35, 35, 35);
+    background-image:
+        linear-gradient(to right, rgb(44, 44, 44) 1px, transparent 1px),
+        linear-gradient(to bottom, rgb(44, 44, 44) 1px, transparent 1px);
+}
