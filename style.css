@@ -192,8 +192,16 @@ div.projects {
 
 div.footer {
     background: rgba(0, 0, 0, 0.897);
-    height: 200vh;
+    height: 30vh;
     color: white;
+    font-weight: bolder;
+    font-family: sans-serif;
+    justify-content: center;
+
+    a {
+        font-size: 40px;
+    }
+
 }
 
 .feedback-container {
