@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" href="media/images/portfolio_icon.png" />
+    <title>Matthew Gligore</title>
+    <link rel="stylesheet" href="landing.css" />
+  </head>
+
+  <body>
+    <div class="landing-page">
+      <div class="content">
+        <h1 class="main-title" id="maintitle">Welcome to My Portfolio</h1>
+        <p class="subtitle" id="subtitle">Crafting Modern Web Experiences</p>
+        <button id="launch-button">Launch</button>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script>
+      const launchButton = document.getElementById("launch-button");
+
+      launchButton.addEventListener("click", function () {
+        launchButton.classList.add("hidden");
+
+        setTimeout(function () {
+          // Create an iframe for index.html with the slide-in animation
+          const iframe = document.createElement("iframe");
+          iframe.src = "index.html";
+          iframe.classList.add("slide-in");
+          subtitle.classList.add("hidden");
+          maintitle.classList.add("hidden");
+          document.body.appendChild(iframe);
+        }); // Timing to match rocket launch duration
+      });
+    </script>
+  </body>
+</html>
