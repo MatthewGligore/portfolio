@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 document.addEventListener('DOMContentLoaded', function () {
     const feedbackButton = document.getElementById('feedback-button');
-    const feedbackContainer = document.getElementById('feedback-container');
+    const feedbackContainer = document.getElementsByClassName('feedback-container');
 
     feedbackButton.addEventListener('click', function () {
         feedbackContainer.classList.add('visible');

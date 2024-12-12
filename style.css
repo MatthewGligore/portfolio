@@ -338,3 +338,7 @@ button#contact-button {
 .hidden {
     display: none;
 }
+
+.feedback-container.visible {
+    top: 0;
+}
