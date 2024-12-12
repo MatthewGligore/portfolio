@@ -11,9 +11,7 @@
     <nav class="navbar">
         <ul>
             <li><a href="#home">Home</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact" id="contact-button">Contact</a></li>
-            <li><a href="#feedback" id="feedback-button">Feedback</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
 
@@ -90,43 +88,6 @@
             <textarea id="message" name="message" rows="4" required></textarea>
             <button type="submit">Send</button>
         </form>
-    </div>
-
-
-    <div class="feedback-container hidden">
-        <h2>Submit Your Feedback</h2>
-        <form id="form" method="POST">
-            <div class="field">
-                <label class="label">Name</label>
-                <div class="control">
-                    <input class="input feedback-name" type="text" placeholder="Your Name" name="Name" />
-                </div>
-            </div>
-
-            <div class="field">
-                <label class="label">Email</label>
-                <div class="control">
-                    <input class="input feedback-email" type="email" placeholder="Your Email" name="Email" />
-                </div>
-            </div>
-
-            <div class="field">
-                <label class="label">Feedback</label>
-                <div class="control">
-                    <textarea class="textarea feedback-message" placeholder="Your Feedback Here"
-                        name="Feedback"></textarea>
-                </div>
-            </div>
-
-            <div class="field is-grouped">
-                <div class="control">
-                    <button class="button is-primary" type="submit" id="submit-button">
-                        Submit
-                    </button>
-                </div>
-            </div>
-        </form>
-        <div id="message"></div>
     </div>
 
     <!-- scripts -->
