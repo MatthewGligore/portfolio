@@ -149,6 +149,7 @@ div.projects {
         grid-column: 2 / 3;
         max-width: 100%;
         width: 50%;
+        height: 50vh;
         grid-row: 2 / 6;
         margin-left: auto;
         margin-right: auto;
