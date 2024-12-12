@@ -151,11 +151,13 @@ div.projects {
 
         position: sticky;
         margin-left: auto;
+        top: 100px;
         margin-right: auto;
 
         border-radius: 20px;
         max-width: 100%;
         width: 50%;
+        height: 50vh;
     }
 }
 
