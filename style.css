@@ -31,10 +31,7 @@
     }
 }
 
-
 div.hero {
-    /* background: repeating-linear-gradient(-45deg, #000, #333 10px, #000 30px); */
-
     background-size: 80px 80px;
     background-color: rgb(35, 35, 35);
     background-image:
@@ -91,35 +88,25 @@ div.hero {
     }
 }
 
-
-
-
-
 div.projects {
     background: rgba(0, 0, 0, 0.93);
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 2fr 0.5fr 3fr 3fr 3fr 2fr;
+    grid-template-rows: auto;
+    gap: 20px;
+    /* Adjust gap between items if needed */
     color: white;
     font-family: sans-serif;
-    grid-template-areas:
-        "t ."
-        "h i"
-        "d ."
-        ". ."
-        ". ."
-        ". .";
 
     h2 {
-        grid-area: t;
+        grid-column: 1 / -1;
         text-align: center;
         margin-top: 30px;
-        grid-column-end: -1;
         font-size: 30px;
     }
 
     h3.header {
-        grid-area: h;
+        grid-column: 1 / 2;
         text-align: left;
         font-size: 50px;
         margin-left: 175px;
@@ -127,6 +114,7 @@ div.projects {
     }
 
     .project {
+        grid-column: 1 / 2;
         margin-left: 175px;
         margin-right: auto;
         margin-top: 70px;
@@ -153,41 +141,22 @@ div.projects {
     }
 
     div.data {
-        grid-area: d;
+        grid-column: 1 / 2;
         color: white;
-        grid-row-end: -2;
-
-    }
-
-    img {
-        max-width: 100%;
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        border-radius: 20px;
-
-        grid-area: i;
-        grid-row-end: -2;
-        position: sticky;
-        top: 150px;
-        align-self: start;
-
     }
 
     video {
+        grid-column: 2 / 3;
         max-width: 100%;
         width: 50%;
         margin-left: auto;
         margin-right: auto;
         border-radius: 20px;
-
-        grid-area: i;
-        grid-row-end: -2;
         position: sticky;
-        top: 150px;
+        top: 100px;
         align-self: start;
+        z-index: 10;
     }
-
 }
 
 div.footer {
@@ -204,7 +173,6 @@ div.footer {
     a {
         font-size: 40px;
     }
-
 }
 
 .feedback-container {
