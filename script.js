@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     const terms = ["Web Developer", "UI Designer", "Tech Enthusiast", "Code Creator", "Design Innovator"];
+    let termIndex = 0;
     let charIndex = 0;
     const span = document.querySelector(".typed-text");
 

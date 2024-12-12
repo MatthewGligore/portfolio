@@ -147,17 +147,17 @@ div.projects {
 
     video {
         grid-column: 2 / 3;
-        grid-row: 2 / -1;
-
-        position: sticky;
-        margin-left: auto;
-        top: 100px;
-        margin-right: auto;
-
-        border-radius: 20px;
         max-width: 100%;
         width: 50%;
         height: 50vh;
+        grid-row: 2 / 6;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 20px;
+        position: sticky;
+        top: 100px;
+        align-self: start;
+        z-index: 10;
     }
 }
 
