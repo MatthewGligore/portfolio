@@ -162,9 +162,8 @@ div.projects {
 
 div.blank {
     height: 20vh;
-    width: 100%;
-    max-width: 100%;
     background: rgba(0, 0, 0, 0.93);
+    display: block;
 }
 
 div.footer {
