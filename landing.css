@@ -89,3 +89,25 @@ html {
     opacity: 1;
   }
 }
+
+@media screen and (min-height: 667px) {
+  .content {
+    font-size: 2rem;
+  }
+  body,
+  html {
+    align-items: start;
+    margin-top: 80px;
+  }
+  .main-title {
+    font-size: 4rem;
+  }
+  .subtitle {
+    margin-top: 10px;
+    font-size: 2rem;
+  }
+  #launch-button {
+    padding: 30px 60px;
+    font-size: 3rem;
+  }
+}
