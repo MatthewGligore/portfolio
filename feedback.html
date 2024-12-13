@@ -5,10 +5,10 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body class="feedback-bg">
-    <nav class="navbar" id="nav">
+    <nav class="navbar">
       <ul>
-        <li><a href="#" id="home">Home</a></li>
-        <li><a href="feedback.html">Feedback</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#">Feedback</a></li>
       </ul>
     </nav>
     <div class="feedback-container">
@@ -116,21 +116,6 @@
               "An error occurred while submitting the form.";
             document.getElementById("message").style.display = "block";
           });
-      });
-    </script>
-    <script>
-      const home = document.getElementById("home");
-      const nav = document.getElementById("nav");
-
-      home.addEventListener("click", function () {
-        nav.classList.add("hidden");
-        setTimeout(function () {
-          // Create an iframe for index.html with the slide-in animation
-          const iframe = document.createElement("iframe");
-          iframe.src = "index.html";
-          iframe.classList.add("slide-in");
-          document.body.appendChild(iframe);
-        }); // Timing to match rocket launch duration
       });
     </script>
   </body>

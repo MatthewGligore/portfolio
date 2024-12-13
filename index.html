@@ -8,14 +8,14 @@
 </head>
 
 <body>
-    <nav class="navbar" id="nav">
+    <nav class="navbar">
         <ul>
-            <li><a href="#home" id="home">Home</a></li>
-            <li><a href="#feedback" id="feedback">Feedback</a></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="feedback.html">Feedback</a></li>
         </ul>
     </nav>
 
-    <div class="hero" id="home">
+    <div class="hero">
         <img src="media/images/Portrait.jpg" alt="profile-picture">
         <div class="data">
                 <p class="name">Matthew Gligore, Atlanta Georgia</p>
@@ -87,21 +87,6 @@
     <!-- scripts -->
     <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/c8bf892130.js" crossorigin="anonymous"></script>
-    <script>
-        const feedback = document.getElementById("feedback");
-        const nav = document.getElementById("nav");
-  
-        feedback.addEventListener("click", function () {
-          nav.classList.add("hidden");
-          setTimeout(function () {
-            // Create an iframe for index.html with the slide-in animation
-            const iframe = document.createElement("iframe");
-            iframe.src = "feedback.html";
-            iframe.classList.add("slide-in");
-            document.body.appendChild(iframe);
-          }); // Timing to match rocket launch duration
-        });
-      </script>
     
 </body>
 

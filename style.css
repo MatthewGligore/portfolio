@@ -290,3 +290,71 @@ div.footer {
     opacity: 1;
   }
 }
+
+@media screen and (min-height: 667px) {
+  body {
+    /* background: rgb(81, 0, 255); */
+
+    .navbar ul {
+      justify-content: space-around;
+      font-size: 3rem;
+    }
+
+    div.hero {
+      margin-top: 60px;
+      height: 35vh;
+
+      .data p.name {
+        font-size: 1.5rem;
+      }
+    }
+
+    div.projects {
+      position: static;
+      height: 200vh;
+      grid-template-rows: 1fr 2.5fr 3fr 3fr 3fr 3fr;
+      h3.header {
+        display: none;
+      }
+
+      h2 {
+        font-size: 3rem;
+      }
+
+      .project {
+        font-size: 1.6em;
+        grid-column: 1 / -1;
+        margin-left: 120px;
+        margin-right: 120px;
+        text-align: center;
+      }
+
+      div.data {
+        grid-column: 1 / -1;
+        justify-content: center;
+        align-items: center;
+        position: sticky;
+        top: 500px;
+        align-self: start;
+        z-index: 10;
+      }
+
+      video {
+        grid-column: 1 / -1;
+        grid-row: 2 / 3;
+        height: 30vh;
+        width: 100vh;
+        position: sticky;
+        border-radius: 1000px;
+      }
+
+      div.blank {
+        display: none;
+      }
+    }
+  }
+
+  div.footer {
+    height: 15vh;
+  }
+}
