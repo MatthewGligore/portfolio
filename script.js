@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 const mediaQuery = window.matchMedia("(max-width: 1000px)");
 
 function handleMediaQueryChange(e) {
-  if (!e.matches) {
+  if (e.matches) {
     // Code to execute when media query matches (e.g., on smaller screens)
     console.log("Media query matched!");
     window.addEventListener("scroll", function (event) {
